@@ -1,0 +1,19 @@
+@import "css_submodules/variables";
+@import "css_submodules/mixins";
+
+*{
+  @include star()
+}
+body {
+  @include compleet_body();
+}
+#Movies-Catalog {
+  @include compleet_catalog()
+}
+
+h3{
+  @include h_dinge()
+}
+h5{
+  @include h_dinge()
+}

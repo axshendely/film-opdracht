@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie SELECTOR</title>
+    <script defer src="scripts/movie_scripts.js"></script>
+    <script defer src="scripts/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+<header>
+    <h1>MOVIE SELECTOR</h1>
+    <div class="search-form">
+        <label for="search-box">Search a movie</label><br>
+        <input type="search" id="search-box" name="Search By Name" placeholder="Search a movie">
+        <button type="submit" id="search-buts"  onclick="Send_to_name()" class="search-button"><span class="search-button-text">Search</span></button>
+    </div>
+    <ul>
+        <div>
+            <input type="radio" id="filter-by-latest" name="filter_by" value="latest">
+            <label for="filter-by-latest">Latest Movies</label>
+        </div>
+        <div>
+            <input type="radio" id="filter-by-avengers" name="filter_by" value="marvel">
+        <label for="filter-by-avengers">Avengers Movies</label>
+        </div>
+        <div>
+            <input type="radio" id="filter-by-xmen" name="filter_by" value="xmen">
+        <label for="filter-by-xmen">X-Men Movies</label>
+        </div>
+        <div>
+            <input type="radio" id="filter-by-princess" name="filter_by" value="princess">
+            <label for="filter-by-princess">Princess Movies</label>
+        </div>
+        <div>
+            <input type="radio" id="filter-by-Batman" name="filter_by" value="batman">
+            <label for="filter-by-Batman">Batman Movies</label>
+        </div>
+    </ul>
+</header>
+<main>
+    <ul id="Movies-Catalog">
+    </ul>
+</main>
+</body>
+</html>

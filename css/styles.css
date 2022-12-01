@@ -1,0 +1,124 @@
+* {
+  top: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+body header ul {
+  display: grid;
+  position: absolute;
+  --colum-count: 5;
+  --row-count: 1fr;
+  grid-template-columns: repeat(var(--colum-count), var(--row-count));
+  grid-column-gap: 30px;
+  left: 12%;
+  top: 25%;
+}
+body header ul label {
+  font-size: 25px;
+}
+body header h1 {
+  position: absolute;
+  left: 38%;
+  top: 10%;
+  display: grid;
+  justify-content: center;
+  font-family: "Arial Black", serif;
+  color: white;
+}
+body header .search-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: left;
+  position: absolute;
+  top: 50px;
+  height: 5px;
+  width: 30px;
+  left: 7.9%;
+  font-size: xx-large;
+  color: white;
+  gap: 10px;
+}
+body header .search-form input {
+  top: 10px;
+  color: black;
+  font-size: large;
+}
+body header ul label {
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+#Movies-Catalog {
+  display: grid;
+  position: absolute;
+  --gap: 0;
+  --colum-count: 4;
+  --row-count: 1fr;
+  --row-height: 500px;
+  --left: 5%;
+  grid-template-columns: repeat(var(--colum-count), var(--row-count));
+  grid-auto-rows: var(--row-height);
+  top: 40%;
+  height: 100%;
+  width: 90%;
+  border: black 5px solid;
+  left: var(--left);
+  background-color: black;
+}
+#Movies-Catalog li {
+  height: 100%;
+  width: 100%;
+  left: 30px;
+}
+#Movies-Catalog button {
+  border-radius: 10px;
+  overflow: hidden;
+  align-content: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 10px;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  width: 50%;
+  height: 25%;
+  top: -50%;
+  left: 10%;
+  font-size: 15px;
+  background-color: darkgrey;
+}
+#Movies-Catalog img {
+  opacity: 1;
+  border-radius: 8px;
+  transition: 0.5s ease-in-out;
+}
+#Movies-Catalog li:hover button {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+#Movies-Catalog li:hover img {
+  cursor: default;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+h3 {
+  color: black;
+  font-family: "Arial Black", serif bold;
+}
+
+h5 {
+  color: black;
+  font-family: "Arial Black", serif bold;
+}
+
+/*# sourceMappingURL=styles.css.map */
